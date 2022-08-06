@@ -11,7 +11,6 @@
             <input type="hidden" name="id_module" value="<?=$module->id_module?>">            
             <button type="submit" class="btn btn-danger">Supprimer</button>
         </form>
-        <a href="?p=modules.commentaires.add" class="btn btn-info">Commenter</a>
     </div>
     <div class="col-md-3"></div>
 </div>
