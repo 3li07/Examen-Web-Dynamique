@@ -12,7 +12,7 @@ en suite aller vers http://localhost:80/examenphp/public/index.php?p=auths.login
 Sous linux
 Veiller entrer dans le dossier Examen-Web-Dynamique puis 
 execute le script suivant 
-php -S localhost:80 
+sudo php -S localhost:80 
 en suite aller vers http://localhost:80/examenphp/public/index.php?p=auths.login
 
 
