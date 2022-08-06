@@ -83,11 +83,13 @@ class EtudiantsController extends appController {
                 $messagepdp = $uploadPhoto['message'];
                 $this->render('etudiants.edit',compact('messagepdp'));
             }
+
             $result = $etudiantTable->update($_GET['id'],[
                 'nom' => $_POST['nom'],
                 'prenom' => $_POST['prenom'],
                 'email' => $_POST['email'],
                 'adresse' => $_POST['address'],
+                'numero_matricule' => $_POST['numero_matricule'],
                 'niveau' => $_POST['classe'],
                 'groupe' => $_POST['groupe'],
                 'dateDeNaissance' => $_POST['dtn'],
