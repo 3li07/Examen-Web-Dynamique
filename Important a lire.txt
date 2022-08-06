@@ -10,7 +10,7 @@ Veillez deplacer le dossier le dossier examenphp vers htdocs du XAMPP ou www du 
 en suite aller vers http://localhost:80/examenphp/public/index.php?p=auths.login
 
 Sous linux
-Veiller entrer dans le dossier Examen-Web-Dynamique-main puis 
+Veiller entrer dans le dossier Examen-Web-Dynamique puis 
 execute le script suivant 
 php -S localhost:80 
 en suite aller vers http://localhost:80/examenphp/public/index.php?p=auths.login
