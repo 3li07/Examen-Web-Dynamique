@@ -6,8 +6,8 @@
 # Dans le dossier core
     les elements source de notre architecture 
     
-#Dans le dossier public 
+# Dans le dossier public 
     les photo ainsi que la template que j'ai utilise 
     
-#Dans le dossier config
+# Dans le dossier config
     c'est la dedans qu'on modifie la connexion a la base de donne dbname, dbhost ainsi que dbroot et password
