@@ -1,0 +1,91 @@
+
+Avant d'execter veuiller lire le fichier  Important a lire
+
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: professeurs
+#------------------------------------------------------------
+
+CREATE TABLE professeurs(
+        id_prof  Int  Auto_increment  NOT NULL ,
+        nom_prof Varchar (255) ,
+        prenom   Varchar (255) ,
+        email    Varchar (50) ,
+        adresse  Varchar (255) ,
+        facebook Varchar (255) ,
+        contact  varchar (255) ,
+        profil   Varchar (255) ,
+        dateDeNaissance varchar (255) ,
+        genre Char(1) 
+	,CONSTRAINT professeurs_PK PRIMARY KEY (id_prof)
+)DEFAULT CHARSET UTF8;
+
+
+#------------------------------------------------------------
+# Table: eleves
+#------------------------------------------------------------
+
+CREATE TABLE etudiants(
+        id_eleve         Int  Auto_increment  NOT NULL ,
+        numero_matricule Varchar (255) ,
+        nom              Varchar (255) ,
+        prenom           Varchar (255) ,
+        genre            Char (1) ,
+        email            Varchar (255) ,
+        etab_ant         Varchar (255) ,
+        diplome          Varchar (255) ,
+        niveau           Varchar (10) ,
+        groupe           Varchar (10) ,
+        facebook         Varchar (255) ,
+        contact          Varchar (255) ,
+        adresse          Varchar (255) ,
+        profil           Varchar (255) ,
+        dateDeNaissance varchar (255) 
+	,CONSTRAINT eleves_PK PRIMARY KEY (id_eleve)
+)DEFAULT CHARSET UTF8;
+
+
+#------------------------------------------------------------
+# Table: modules
+#------------------------------------------------------------
+
+CREATE TABLE modules(
+        id_module    Int  Auto_increment  NOT NULL ,
+        code_module  Varchar (255) ,
+        nom_module   Varchar (255) ,
+        nombre_heure Int ,
+        id_prof      Int NOT NULL
+	,CONSTRAINT modules_PK PRIMARY KEY (id_module)
+
+	,CONSTRAINT modules_professeurs_FK FOREIGN KEY (id_prof) REFERENCES professeurs(id_prof)
+)DEFAULT CHARSET UTF8;
+
+
+#------------------------------------------------------------
+# Table: cours
+#------------------------------------------------------------
+
+CREATE TABLE cours(
+        id_cours  Int  Auto_increment  NOT NULL ,
+        titre     Varchar (255) ,
+        contenu   Longtext ,
+        id_module Int NOT NULL
+	,CONSTRAINT cours_PK PRIMARY KEY (id_cours)
+
+	,CONSTRAINT cours_modules_FK FOREIGN KEY (id_module) REFERENCES modules(id_module)
+)DEFAULT CHARSET UTF8;
+
+#------------------------------------------------------------
+# Table: auth
+#------------------------------------------------------------
+
+CREATE TABLE auth(
+        id  Int  Auto_increment  NOT NULL ,
+        email     Varchar (255) ,
+        mdp   Varchar (255) 
+	,CONSTRAINT auth_PK PRIMARY KEY (id)
+)DEFAULT CHARSET UTF8;

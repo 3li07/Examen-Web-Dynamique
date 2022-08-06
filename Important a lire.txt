@@ -1,0 +1,18 @@
+
+EXAMEN PHP
+
+
+Tout d'abord Veuillez creer la base de donner avec SQL qui sont dans le fichier SQL.txt
+
+
+SUr Windows
+Veillez deplacer le dossier le dossier PHP vers htdocs du XAMPP ou www du WAMP server pour le mettre en server local
+en suite aller vers http://localhost:80/examenphp/public/index.php?p=auths.login
+
+Sous linux
+Veiller entrer dans le dossier PHP puis 
+execute le script suivant php -S localhost:80 
+en suite aller vers http://localhost:80/examenphp/public/index.php?p=auths.login
+
+
+
