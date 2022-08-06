@@ -1,8 +1,5 @@
 <h2>Liste des Modules</h2>
-<div class="row">
-    <div class="col-md-2"><a href="?p=modules.add" class="btn btn-primary">Ajouter</a></div>
-    <div class="col-md-8"></div>
-</div>
+
 <table class="table">
     <thead>
         <tr>
