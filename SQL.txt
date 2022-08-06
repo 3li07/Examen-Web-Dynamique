@@ -5,7 +5,13 @@ Avant d'execter veuiller lire le fichier  Important a lire
 #        Script MySQL.
 #------------------------------------------------------------
 
+#-----------------------------------------------------------
+#        Creation Data Base examenphp
+#-----------------------------------------------------------
 
+CREATE DATABASE examenphp
+    DEFAULT CHARACTER SET = 'utf8mb4';
+    
 #------------------------------------------------------------
 # Table: professeurs
 #------------------------------------------------------------
