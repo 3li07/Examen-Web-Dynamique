@@ -32,6 +32,10 @@
                     <input type="email" class="form-control" id="inputEmail" placeholder="etudiant@gmail.com" name = "email" value= "<?php echo $etudiant -> email?>">
                   </div>
                   <div class="col-12">
+                    <label for="inputDtn" class="form-label">Numero Matricule</label>
+                    <input type="text" class="form-control" id="inputDtn" name="numero_matricule" value ="<?php echo $etudiant->numero_matricule?>">
+                  </div>
+                  <div class="col-12">
                     <label for="inputDtn" class="form-label">Date de Naissance</label>
                     <input type="date" class="form-control" id="inputDtn" name="dtn" value ="<?php echo $etudiant -> dateDeNaissance?>">
                   </div>
