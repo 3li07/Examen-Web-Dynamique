@@ -55,7 +55,7 @@ class ProfesseursController extends appController {
                 'email' => $_POST['email'],
                 'adresse' => $_POST['address'],
                 'dateDeNaissance' => $_POST['dtn'],
-                'contact' =>(int)$_POST['tel'],
+                'contact' =>$_POST['tel'],
                 'facebook' => $_POST['rs'],
                 'genre' => $_POST['genre'],
                 'profil' => $uploadPhoto['filename'],
